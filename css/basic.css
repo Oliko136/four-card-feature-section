@@ -1,3 +1,24 @@
+:root {
+    --red: #EA5454;
+    --cyan: #44D3D2;
+    --orange: #FCAE4A;
+    --blue: #549EF2;
+    --dark-blue: #4D4F62;
+    --light-gray: #FAFAFA;
+    --white: #FFF;
+    --font-family: 'Poppins', sans-serif;
+    --font-size-1: 1.5rem;
+    --font-size-2: 1.25rem;
+    --font-size-3: 0.9375rem;
+    --font-size-4: 0.8125rem;
+    --line-height-1: 1.5625rem;
+    --line-height-2: 1.4375rem;
+    --letter-spacing-1: 0.01044rem;
+    --letter-spacing-2: 0.0065rem;
+    --letter-spacing-3: 0.00563rem;
+
+}
+
 html {
     box-sizing: border-box;
 }
