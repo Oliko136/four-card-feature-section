@@ -51,4 +51,8 @@ img {
 
 body {
     margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size-3);
+    color: var(--dark-blue);
+    background-color: var(--light-gray);
 }
