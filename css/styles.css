@@ -6,6 +6,35 @@
     padding: 0 var(--spacing-200);
 }
 
+.title {
+    font-size: var(--font-size-1);
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.title-accent {
+    font-weight: 600;
+}
+
+.description {
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-2);
+    text-align: center;
+    opacity: 0.5;
+}
+
+.tools_name {
+    font-size: var(--font-size-2);
+    font-weight: 600;
+}
+
+.tools_description {
+    line-height: var(--line-height-2);
+    letter-spacing: var(--letter-spacing-3);
+    opacity: 0.5;
+}
+
 @media screen and (min-width: 1440px) {
     .container {
         width: var(--desktop);
