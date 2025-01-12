@@ -16,7 +16,8 @@
     --letter-spacing-1: 0.01044rem;
     --letter-spacing-2: 0.0065rem;
     --letter-spacing-3: 0.00563rem;
-
+    --mobile: 375px;
+    --desktop: 1440px;
 }
 
 html {

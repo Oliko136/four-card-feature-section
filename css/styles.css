@@ -1,1 +1,12 @@
 @import './basic.css';
+
+.container {
+    width: var(--mobile);
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: var(--desktop);
+    }
+}
