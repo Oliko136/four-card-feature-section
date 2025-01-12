@@ -39,4 +39,14 @@
     .container {
         width: var(--desktop);
     }
+
+    .title {
+        font-size: var(--font-size-desktop);
+        letter-spacing: var(--letter-spacing-desktop);
+    }
+
+    .description {
+        width: 540px;
+        margin: 0 auto;
+    }
 }
