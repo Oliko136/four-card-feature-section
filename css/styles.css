@@ -42,19 +42,19 @@
     box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
 }
 
-.tools_item.cyan {
+.tools_item.supervisor {
     border-top: 3.5px solid var(--cyan);
 }
 
-.tools_item.red {
+.tools_item.team {
     border-top: 3.5px solid var(--red);
 }
 
-.tools_item.orange {
+.tools_item.karma {
     border-top: 3.5px solid var(--orange);
 }
 
-.tools_item.blue {
+.tools_item.calculator {
     border-top: 3.5px solid var(--blue);
 }
 
@@ -72,8 +72,8 @@
 
 .tools_img {
     position: absolute;
-    right: var(--spacing-200);
-    bottom: var(--spacing-200);
+    right: var(--spacing-175);
+    bottom: var(--spacing-175);
     width: 57px;
     height: 57px;
 }
@@ -81,6 +81,7 @@
 @media screen and (min-width: 1440px) {
     .container {
         width: var(--desktop);
+        padding: var(--spacing-500);
     }
 
     .title {
@@ -92,5 +93,52 @@
         width: 540px;
         margin: 0 auto;
         margin-bottom: var(--spacing-400);
+    }
+
+    .tools {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(311px, 350px));
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            ". team ."
+            "supervisor team calculator"
+            "supervisor karma calculator"
+            ". karma .";
+        justify-content: center;
+        gap: var(--spacing-188);
+    }
+
+    .tools_item {
+        justify-self: center;
+        width: 350px;
+        height: 250px;
+        padding: var(--spacing-200);
+    }
+
+    .tools_item.supervisor {
+        grid-area: supervisor;
+    }
+
+    .tools_item.team {
+        grid-area: team;
+    }
+
+    .tools_item.karma {
+        grid-area: karma;
+    }
+
+    .tools_item.calculator {
+        grid-area: calculator;
+    }
+
+    .tools_name {
+        margin-bottom: var(--spacing-40);
+    }
+
+    .tools_img {
+        right: var(--spacing-200);
+        bottom: var(--spacing-200);
+        width: 64px;
+        height: 64px;
     }
 }
